@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Template &middot; Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+
+
+    <style type="text/css">
+        body {
+            padding-top: 20px;
+            padding-bottom: 60px;
+        }
+
+            /* Custom container */
+        .container {
+            margin: 0 auto;
+            max-width: 1000px;
+        }
+
+        .container > hr {
+            margin: 60px 0;
+        }
+
+            /* Main marketing message and sign up button */
+        .jumbotron {
+            margin: 80px 0;
+            text-align: center;
+        }
+
+        .jumbotron h1 {
+            font-size: 100px;
+            line-height: 1;
+        }
+
+        .jumbotron .lead {
+            font-size: 24px;
+            line-height: 1.25;
+        }
+
+        .jumbotron .btn {
+            font-size: 21px;
+            padding: 14px 24px;
+        }
+
+            /* Supporting marketing content */
+        .marketing {
+            margin: 60px 0;
+        }
+
+        .marketing p + h4 {
+            margin-top: 28px;
+        }
+
+            /* Customize the navbar links to be fill the entire space of the .navbar */
+        .navbar .navbar-inner {
+            padding: 0;
+        }
+
+        .navbar .nav {
+            margin: 0;
+            display: table;
+            width: 100%;
+        }
+
+        .navbar .nav li {
+            display: table-cell;
+            width: 1%;
+            float: none;
+        }
+
+        .navbar .nav li a {
+            font-weight: bold;
+            text-align: center;
+            border-left: 1px solid rgba(255, 255, 255, .75);
+            border-right: 1px solid rgba(0, 0, 0, .1);
+        }
+
+        .navbar .nav li:first-child a {
+            border-left: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .navbar .nav li:last-child a {
+            border-right: 0;
+            border-radius: 0 3px 3px 0;
+        }
+        #holder{
+            width:620px;
+            height:480px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="masthead">
+        <h3 class="muted">百科smarty art 在线编辑</h3>
+
+        <div class="navbar">
+            <div class="navbar-inner">
+                <div class="container">
+                    <ul class="nav">
+                        <li class="active"><a href="#">在线编辑</a></li>
+                        <li><a href="#">百科首页</a></li>
+                        <li><a href="#">Services</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- /.navbar -->
+    </div>
+    <div class="row-fluid">
+        <div class="span4">
+
+            <div class="edit-layout">
+                <p>
+                    <label class="checkbox">
+                        <input type="checkbox" id="auto-refresh-box" checked> <span
+                            class="label label-success">及时预览</span>
+                    </label></p>
+
+                <div class="edit-layout-body">
+                    <ul id="data-list-ul">
+
+                    </ul>
+                </div>
+                <div class="edit-layout-note">
+                    层次结构列表，用于显示组之间的层次关系递进。还可以用于对于信息的分组或列出信息
+                </div>
+                <p class="edit-btns"><a class="btn btn-success" href="#" id="preview">预览</a></p>
+            </div>
+        </div>
+        <div class="span8">
+            <h2>预览效果</h2>
+
+            <div id="holder" class="preview-layout"></div>
+        </div>
+
+    </div>
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+        <h1>在线版smart art</h1>
+        <ul style="width:200px;maring:0 auto;text-align: left">
+            <li>
+                支持数据编辑
+            </li>
+            <li>
+                支持展现样式多种选择
+            </li>
+            <li>支持各浏览器</li>
+        </ul>
+        <a class="btn btn-large btn-success" href="#">和我一起来吧！</a>
+    </div>
+
+    <div class="footer">
+        <p>&copy; baidu 2013</p>
+    </div>
+
+</div>
+<!-- /container -->
+<script type="text/javascript" src="static/lib/raphael.js"></script>
+<script type="text/javascript" src="static/seajs/sea.js" data-config="edit/config.js" data-main="edit/main.js"></script>
+</body>
+</html>

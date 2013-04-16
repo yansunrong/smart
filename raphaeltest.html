@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="../jquery.js"></script>
+    <script src="js/raphael.js"></script>
+    <script type="text/javascript" src="js/mindmap.js"></script>
+    <script type="text/javascript" src="js/util.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var paper = Raphael("holder", 640, 480);
+            var rect = paper.rect(50,50,100,50);
+            rect.attr({
+
+            });
+            paper.text(100, 100, 'fuck')
+//            var txt = paper.print(10, 50, "print", paper.getFont("arial"), 30).attr({fill: "#fff"});
+        });
+
+    </script>
+</head>
+<body>
+<div id="holder"></div>
+</body>
+</html>

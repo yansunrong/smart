@@ -1,0 +1,116 @@
+.edit-layout {
+    border: 1px solid #ddd;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .075);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .075);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .075);
+    background-color: #f7f7f9;
+    padding: 9px;
+}
+
+.edit-layout-body {
+    height: 300px;
+    border: 1px gray solid;
+    padding: 5px;
+    font-size: 12px;
+    overflow: auto;
+}
+
+.edit-layout-note {
+    height: 50px;
+    border: 1px gray solid;
+    padding: 5px;
+    margin-top: 5px;
+    font-size: 12px;
+    color: gray;
+
+}
+
+.edit-btns {
+    margin: 5px 0;
+}
+
+.edit-layout  input[type="text"] {
+    padding: 0 3px;
+    margin: 2px 0;
+    border-radius: 0;
+    font-size: 12px;
+    width: auto;
+}
+
+.input-tool {
+    display: none;
+    white-space: nowrap;
+}
+
+.edit-layout li:hover .input-tool {
+    display: inline;
+}
+
+.edit-layout ul {
+    list-style: none;
+    margin: 0
+}
+
+.edit-layout li.level1 {
+
+}
+
+.edit-layout li.level2 {
+    margin: 0 0 0 10px;
+}
+
+.edit-layout li.level3 {
+    margin: 0 0 0 20px;
+}
+
+.edit-layout li.level4 {
+    margin: 0 0 0 30px;
+}
+
+.edit-layout li.level5 {
+    margin: 0 0 0 40px;
+}
+
+::-webkit-scrollbar-track-piece{
+    background-color:#fff;/*滚动条的背景颜色*/
+    -webkit-border-radius:0;/*滚动条的圆角宽度*/
+}
+::-webkit-scrollbar{
+    width:8px;/*滚动条的宽度*/
+    height:8px;/*滚动条的高度*/
+}
+::-webkit-scrollbar-thumb:vertical{/*垂直滚动条的样式*/
+    height:50px;
+    background-color:#999;
+    -webkit-border-radius:4px;
+    outline:2px solid #fff;
+    outline-offset:-2px;
+    border: 2px solid #fff;
+}
+::-webkit-scrollbar-thumb:hover{/*滚动条的hover样式*/
+    height:50px;
+    background-color:#9f9f9f;
+    -webkit-border-radius:4px;
+}
+::-webkit-scrollbar-thumb:horizontal{/*水平滚动条的样式*/
+    width: 5px;
+    background-color: #CCCCCC;
+    -webkit-border-radius: 6px;
+}
+
+/*预览区*/
+
+.preview-layout {
+    border: 1px solid #ddd;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .075);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .075);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .075);
+    background-color: #f7f7f9;
+    padding: 9px;
+}
